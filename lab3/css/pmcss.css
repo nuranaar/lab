@@ -1,0 +1,103 @@
+html{
+    margin: 30px;
+}
+.game-place{
+    position: relative;
+    background-color: black;
+    height: 400px;
+    width: 700px;
+}
+
+.nyam-nyam{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: SandyBrown;
+    animation: nyam;
+    animation-duration: 4.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes nyam{
+    0%{
+        top: 50px;
+        left: 50px;
+    }
+    20%{
+        top: 350px;
+        left: 50px;
+    }
+    40%{
+        top: 350px;
+        left: 350px;
+    }
+    60%{
+        top: 50px;
+        left: 350px;     
+    }
+    80%{
+        top: 50px;
+        left: 650px;            
+    }
+    100%{
+        top: 350px;
+        left: 650px;                    
+    }
+}
+
+.pacman img{
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+    opacity: 0;
+    animation: pacman;
+    animation-duration: 5.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: linear; */
+    z-index: 2;
+    
+}
+
+@keyframes pacman{
+    0%{
+        top: 28px;
+        left: 28px;
+        opacity: 0;
+    }
+    20%{
+        top: 328px;
+        left: 28px;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    40%{
+        top: 328px;
+        left: 328px;
+        opacity: 1;
+        transform: rotate(-90deg)
+    }
+    60%{
+        top: 28px;
+        left: 328px;    
+        opacity: 1;
+        transform: rotate(-90deg) 
+    }
+    80%{
+        top: 28px;
+        left: 628px;     
+        opacity: 1;  
+        transform: rotate(0deg)     
+    }
+    100%{
+        top: 328px;
+        left: 628px;    
+        opacity: 1;
+        transform: rotate(90deg)                
+    }
+}

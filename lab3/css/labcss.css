@@ -1,0 +1,155 @@
+html{
+    background-color: rgb(226, 223, 223);
+    margin-top: 50px;
+}
+
+.item{ 
+    margin: 0px 5px;
+    position: relative;
+    padding: 50px 15px;
+    text-align: center;
+    background-color: #fff;
+    height: 300px;
+    width: 95%;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.title h3{
+    margin: 20px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    padding: 7px 0px 0px 0px;
+    height: 35px;
+}
+.title p{ 
+    margin: 20px 0px 10px 0px;
+    opacity: 0;
+}
+.icon {
+    font-size: 30px;
+    color: #E02217;
+}
+.icon i{
+    width: 45px;
+    padding: 7px 0px 0px 0px;
+    height: 45px;
+}
+
+.item:hover{
+    background-color: #E02217;
+    transform: scale(1.1, 1.1)
+}
+.item:hover .icon{
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    color: white;
+    animation: icon;
+    animation-duration: 0.5s;
+}
+@keyframes icon{
+    0%{
+        top: 200px;
+        left: 90px;
+    }
+    80%{
+        top: 50px;
+        left: 90px;
+    }
+    100%{
+        top: 60px;
+        left: 90px;
+    }
+}
+.item:hover .title h3{
+    position: absolute;
+    top: 120px;
+    left: 13px;
+    color: white;
+    font-weight: 600;
+    animation: title;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+@keyframes title{
+    0%{
+        top: 55px;
+        left: 13px;
+    }
+    100%{
+        top: 120px;
+        left: 13px;
+    }
+}
+.item:hover .title p{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    color: white;
+    opacity: 1;
+    animation: p;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+@keyframes p{
+    0%{
+        top: 170px;
+        opacity: 0;
+    }
+    100%{
+        top: 150px;
+        opacity: 1;
+    }
+}
+.item::before{
+    content:"";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 55px;
+    height: 65px;
+    border: 1px solid #E02217;
+    border-top-left-radius: 5px;
+    border-right: none;
+    border-bottom: none;
+}
+.item:hover:before{
+    content:"";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 55px;
+    height: 65px;
+    border: 1px solid #fff;
+    border-top-left-radius: 5px;
+    border-right: none;
+    border-bottom: none;
+}
+.item::after{
+    content:"";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 55px;
+    height: 65px;
+    border: 1px solid #E02217;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    border-top: none;
+}
+.item:hover::after{
+    content:"";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 55px;
+    height: 65px;
+    border: 1px solid #fff;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    border-top: none;
+}

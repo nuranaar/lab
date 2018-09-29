@@ -1,0 +1,42 @@
+html{
+    margin-top: 30px;
+    background-image: url(../img/bg-body.jpg);
+}
+
+.navbar {
+    margin-top: 10px;
+    height: 68px;
+    background-image: url(../img/bg-navigation.png);
+}
+.navlist {
+    line-height: 68px;
+}
+.navlist ul li{
+    margin-right: 70px; 
+    display: inline-block;
+}
+
+.navlist ul li a{
+    font-size: 20px;
+    color: #A2D9CE ;
+    text-decoration: none;
+}
+.navlist ul li a:hover{
+    color: white
+}
+.navlist ul li a:active{
+    color: white;
+}
+#content .title h3{
+    color: #0E6655;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#content .text p{
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+#menu .img img{
+    border: 10px solid rgb(100, 8, 8);
+    border-radius: 10px;
+}
