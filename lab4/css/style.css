@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@font-face{
+    font-family:'Open Sans', sans-serif;
+}
+*{
+    font-family:'Open Sans', sans-serif;
+}
 .navbar .navbar-brand{
     font-weight: 700;
     color: #f05f40;
@@ -13,7 +20,7 @@ header{
 background-image: url(../img/default-header.jpg);
 background-size: cover;
 background-position: center;
-height: 100vh;
+height: 800px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -45,9 +52,59 @@ hr{
 }
 /* main */
 main{
+    
+}
+.title h2{
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+}
+h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+#section1{
     background-color: #f05f40;
-    height: 100vh;
+    height: 500px;
+    padding: 120px;
 }
 #section1 hr{
     background-color: white;
+}
+#section1 .btn{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+#section2{
+    padding: 120px;
+    height: 600px;
+}
+#section2 h2{
+    color: black;
+}
+#section2 p{
+    font-size: 18px;
+    color: #00000091;
+}
+#section2 i{
+    color: #f05f40;
+    padding: 16px;
+    height: 100px;
+    font-size: 72px;
+    animation: icon;
+    animation-duration:.5s;
+}
+@keyframes icon{
+    from{
+        font-size: 0px;
+        opacity: 0;
+    }
+    to{
+        font-size: 72px;
+        opacity: 1;
+    }
 }
