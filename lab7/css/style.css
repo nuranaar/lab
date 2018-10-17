@@ -1,0 +1,137 @@
+.container{
+    display: flex;
+
+}
+.line{
+    height: 5px;
+    width: 50px;
+    background-color: #000000;
+    margin-top: 56px;
+
+}
+.btn::before{
+    content: "";
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    background-color: #000000;
+    top: 40px;
+    left: 141px;
+}
+.btn::after{
+    content: "";
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    background-color: #000000;
+    top: 74px;
+    left: 141px;
+}
+
+.active::before{
+    animation-name: openBefore;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+.active::after{
+    animation-name: openAfter;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+.deactive::before{
+    animation-name: closeBefore;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+.deactive::after{
+    animation-name: closeAfter;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes openBefore{
+    0%{
+        top: 40px;
+    }
+    50%{
+        top:56px;
+        transform: rotate(0)
+
+    }
+    100%{
+        top:56px;
+        transform: rotate(45deg);
+    }
+}
+@keyframes openAfter{
+    0%{
+        top: 74px;
+    }
+    50%{
+        top:56px;
+        transform: rotate(0);
+    }
+    100%{
+        top:56px;
+        transform: rotate(-45deg);
+        
+    }
+}
+@keyframes closeBefore{
+    0%{
+        top:56px;
+        transform: rotate(45deg);
+        
+    }
+    50%{
+        top:56px;
+        transform: rotate(0);
+    }
+    100%{
+        top: 40px;
+        
+    }
+}
+@keyframes closeAfter{
+    0%{
+        top:56px;
+        transform: rotate(-45deg);
+    }
+    50%{
+        top:56px;
+        transform: rotate(0);
+
+    }
+    100%{
+        top: 74px;
+    }
+}
+
+.menu{
+    position: absolute;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #000000;
+}
+.menu ul a{
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+}
+.menu ul{
+    list-style: none;
+    visibility: hidden;
+    margin-top: 100px;
+
+}
+.vjuxMenu{
+    transform: translateX(504px);
+    transition: all .9s;
+}
+.vjuxMenuQeri{
+    transform: translateX(0px);
+    transition: all .9s;
+}
+
