@@ -1,0 +1,11 @@
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\bin\Debug\netcoreapp2.0\lab10Kitab.deps.json
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\bin\Debug\netcoreapp2.0\lab10Kitab.runtimeconfig.json
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\bin\Debug\netcoreapp2.0\lab10Kitab.runtimeconfig.dev.json
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\bin\Debug\netcoreapp2.0\lab10Kitab.dll
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\bin\Debug\netcoreapp2.0\lab10Kitab.pdb
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\obj\Debug\netcoreapp2.0\lab10Kitab.csprojAssemblyReference.cache
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\obj\Debug\netcoreapp2.0\lab10Kitab.csproj.CoreCompileInputs.cache
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\obj\Debug\netcoreapp2.0\lab10Kitab.AssemblyInfoInputs.cache
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\obj\Debug\netcoreapp2.0\lab10Kitab.AssemblyInfo.cs
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\obj\Debug\netcoreapp2.0\lab10Kitab.dll
+C:\Users\ssule\source\repos\lab10Kitab\lab10Kitab\obj\Debug\netcoreapp2.0\lab10Kitab.pdb

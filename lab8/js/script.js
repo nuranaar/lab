@@ -46,22 +46,22 @@ button1.addEventListener("click", function (e) {
 
 button2.addEventListener("click", function (e) {
     e.preventDefault();
-        var name= document.querySelector('input[name="name"]');
-       var surname= document.querySelector('input[name="surname"]');
-      var  exam= document.querySelectorAll('input[name="exam"]');
-       var point= document.querySelectorAll('input[name="point"]');
+    var name = document.querySelector('input[name="name"]');
+    var surname = document.querySelector('input[name="surname"]');
+    var exam = document.querySelectorAll('input[name="exam"]');
+    var point = document.querySelectorAll('input[name="point"]');
 
-       for( var i=0; i<exam.length; i++){
+    for (var i = 0; i < exam.length; i++) {
         var tr = document.createElement("tr");
         tr.innerHTML = `<td>${name.value}</td>`;
         tr.innerHTML += `<td>${surname.value}</td>`;
         tr.innerHTML += `<td>${exam[i].value}</td>`;
         tr.innerHTML += `<td>${point[i].value}</td>`;
         document.querySelector("tbody").appendChild(tr);
-       }
-  
+    }
 
 
-    
+
+
     console.log(tr);
 })
